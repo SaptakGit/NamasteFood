@@ -1,4 +1,4 @@
-npm init
-npm install -D parcel
-npm install react
-npm install react-dom
+npm init <br>
+npm install -D parcel<br>
+npm install react<br>
+npm install react-dom<br>
