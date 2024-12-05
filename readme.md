@@ -1,3 +1,22 @@
+Food Ordering App
+/*
+* Header
+*  - Logo
+*  - Nav Items
+* Body
+*  - Search
+*  - RestaurantContained
+*    - RestaurentCard
+*       - Img
+*       - Name of Restaurent, Star Rating, Cousine, delhiveery time etc
+* Footer
+*  - Copyright
+*  - Links
+*  - Address
+*  - Contact
+*/
+
+
 npm init <br>
 npm install -D parcel<br>
 npm install react<br>
@@ -14,3 +33,13 @@ whenever we use Map(), we need to pass a unique key.
 array.join(",") = print the array elements with comma separated.
 
 ? => optional chaining
+
+Separate file separate component.
+
+Two types of Exports:
+    Named Export:
+        export const Component;
+        import {Component} from "path";
+    Default Export
+        export default Component;
+        import Component from "path";
