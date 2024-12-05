@@ -43,3 +43,8 @@ Two types of Exports:
     Default Export
         export default Component;
         import Component from "path";
+
+React Hook is a normal javascript utility function which is guven to us by React. The only thing is that the function has some logic behind it.
+ - useState() - Superpowerfull State Variables.
+ - useEffect()
+
