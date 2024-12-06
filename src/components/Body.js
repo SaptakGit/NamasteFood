@@ -1,12 +1,13 @@
 import RestaurentCard from "./RestaurentCard";
-import resList from "../utils/mockData/";
+import resList from "../utils/mockData";
 
 import { useState } from "react";
 
 const Body = () => {
-
+//console.log(resList);
     //State variable
-    const [listofRestaurent, setlistofRestaurent] = useState([{
+    const [listofRestaurent, setlistofRestaurent] = useState(resList)
+   /* const [listofRestaurent, setlistofRestaurent] = useState([{
             data:{
                 "id": "932398",
                 "name": "Food Junction",
@@ -28,7 +29,7 @@ const Body = () => {
                 "deliveryTime": 53,
             },
         },
-    ]);
+    ]);*/
 
     // //Normal javascript variable
     // let listofRestaurentJs = [
@@ -61,16 +62,18 @@ const Body = () => {
             <div className="filter">
                 <button className="filter-btn" onClick={() => {
                     //filter logic
-                    console.log('Button Clicked');
-                    filteredList = listofRestaurent.filter(res => res.data.avgRating > 4);
-                    console.log(listofRestaurent);
+                    //console.log('Button Clicked');
+                    //console.log(listofRestaurent);
+                    filteredList = listofRestaurent.filter(res => res.card.card.info.avgRating > 4);
+                    //console.log(listofRestaurent);
                     setlistofRestaurent(filteredList);
                 }}>
                     Top Rated Restaurent
                 </button>
             </div>
             <div className="res-container">
-                {listofRestaurent.map(restaurent => ( <RestaurentCard key={restaurent.data.id} resData={restaurent}/> 
+                {/*console.log(listofRestaurent)*/}
+                {listofRestaurent.map(restaurent => ( <RestaurentCard key={restaurent.card.card.info.id} resData={restaurent}/> 
                 ))}
             </div>
         </div>

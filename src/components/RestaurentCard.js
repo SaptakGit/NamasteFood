@@ -14,8 +14,9 @@ const RestaurentCard = (props) =>{
         cuisines,
         avgRating,
         costForTwo,
-        deliveryTime
-    } = resData?.data;
+    } = resData?.card.card.info;
+
+    const {deliveryTime} = resData?.card.card.info.sla;
 
  
     return (

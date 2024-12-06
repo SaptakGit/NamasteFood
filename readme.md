@@ -44,7 +44,24 @@ Two types of Exports:
         export default Component;
         import Component from "path";
 
-React Hook is a normal javascript utility function which is guven to us by React. The only thing is that the function has some logic behind it.
+React Hook is a normal javascript utility function which is given to us by React. The only thing is that the function has some logic behind it.
  - useState() - Superpowerfull State Variables.
  - useEffect()
+
+Whenever a state variable update React re-rander the component.
+
+
+Reconciliation Algorithm(React Fiber):
+    Whenever there is change in UI it is known as Reconciliation.
+    In React 16 a new algorithm (React Fiber) is come to update the DOM.
+     
+    Virtual DOM : Representation of an actual DOM. It is besically the React Elements,the object which is given by React by createElement.
+
+    Diff Algorithm: It find out the differance between two virtual DOM(Old Virtual DOM and updated virtual DOM) and update the DOM.
+
+    Incremental Rendering: The ability to split the rendering work in different chunks over multiple frames.
+
+    React is fast because it is doing Efficient DOM manupulation.
+
+
 
